@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Mi Primer Formulario-CALCULADORA</title>
+  <title>Calculadora Online Básica | Laboratoria</title>
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
@@ -13,37 +13,37 @@
       <a href="Logout">No hagas click aqui</a>
     </nav>
   </header>
-  <h1><p> CALCULADORA BASICA</p></h1>
+  <h1><p> CALCULADORA BÁSICA</p></h1>
   <section>
     <form onsubmit="return false;">
       <div>
-      <p><label for="nombre">Ingresar su nombre</label></p>
-        <input id="nombre" type="texto"  required >
+        <p><label for="nombre">Nombre: </label></p>
+        <input id="nombre" type="texto"  placeholder="Ingrese su nombre" required >
       </div>
       <div>
-        <p><label for="num1">Ingresar el N°01</label></p>
-        <input id="num1" type="tel"  required >
+        <p><label for="num1">Primer número: </label></p>
+        <input id="num1" type="tel"  placeholder="Ingrese el primer término" required >
       </div>
       <div>
-        <p><label for="num2"> Ingresar el N° 02</label></p>
-        <input id="num2" type="tel" required>
+        <p><label for="num2">Segundo número: </label></p>
+        <input id="num2" type="tel" placeholder="Ingrese el segundo término" required>
       </div>
       <section>
-      <h2>Escoger la operacion</h2>
-    </section>
-    <div><p>
+        <h2>Escoger la operación</h2>
+      </section>
+      <div><p>
         <label for="seleccione"></label>
         <select  id="operacion" class="" name="operacion"  required >
-        <option value="valor1" selected>seleccione </option>
-        <option value="suma">Suma</option>
-        <option value="resta">Resta</option>
-        <option value="multi">Multiplicacion</option>
-        <option value="divi">Division</option>
-        <option value="potencia">Potencia</option>
+          <option value="valor1" selected>seleccione </option>
+          <option value="suma">Suma</option>
+          <option value="resta">Resta</option>
+          <option value="multi">Multiplicacion</option>
+          <option value="divi">Division</option>
+          <option value="potencia">Potencia</option>
         </select>
-    </p></div>
-    <div>
-      <p><button  id="enviar">Calcular</button></p>
+      </p></div>
+      <div>
+        <p><button  id="enviar">Calcular</button></p>
       </div>
     </form>
   </section>

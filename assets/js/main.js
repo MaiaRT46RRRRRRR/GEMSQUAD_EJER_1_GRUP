@@ -2,14 +2,22 @@
 var boton = document.getElementById('enviar');
 
 boton.onclick = function (){
-  var nombre = document.getElementById('nombre').value;
+  var nombre = document.getElementById('nombre').value.trim();
   var numero1 = document.getElementById('num1').value;
   var numero2 = document.getElementById('num2').value;
   var operacion = document.getElementById('operacion').value;
+  //Vaidando que todos los campos esten llenos.
+  if( ! (nombre && numero1 && numero2)) 
+  {
+    alert("Verifique que todos los campos estén llenos correctamente.");
+    return false;
+  }
+
+
   //Llamando a la función "operaciones"
   operaciones(operacion, numero1, numero2);
     //return false;
-  }
+};
 
   //Funcion que evalua la opcion elegida
   function operaciones(opcion, num1, num2) {
@@ -44,9 +52,23 @@ boton.onclick = function (){
     alert("hola soy resta");
   }
   function resta(n1, n2){
-    //desarrollar la funcion resta
-    alert("hola soy resta");
+    //Retornar ERROR si uno o ambos números no estan definidos.
+      if(n1== undefined || n2 == undefined){
+        return "Error";
+      }
+    //Retornar FALSE si no es un número.
+      if(isNaN(n1)){
+        alert("Debe ser un número");
+        return false;
+      }
+    //Retornar FALSE si no es un número.
+      if(isNaN(n2)){
+        alert("Debe ser un número");
+        return false;
+      }
+  return n1 - n2;
   }
+  
   function multiplicacion(n1, n2){
     //desarrollar la funcion multiplicacion
     alert("hola soy multiplicacion");
