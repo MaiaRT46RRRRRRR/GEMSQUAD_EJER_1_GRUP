@@ -55,7 +55,7 @@ boton.onclick = function (){
     //desarrollar la funcion division
      var re = (n1 / n2).toFixed(2);
 
-    alert(re);
+    return re;
   }
   function potencia(n1, n2){
     //desarrollar la funcion potencia
