@@ -49,7 +49,7 @@ boton.onclick = function (){
   }
   function multiplicacion(n1, n2){
     //desarrollar la funcion multiplicacion
-    alert("hola soy multiplicacion");
+        return n1*n2;  
   }
   function division(n1, n2){
     //desarrollar la funcion division
