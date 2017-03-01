@@ -48,9 +48,9 @@ boton.onclick = function (){
 
   //Declaracion de funciones para cada operación matemática
   function suma(n1, n2){
-    //desarrollar la funcion suma
-    alert("hola soy resta");
-  }
+      return (parseInt(n1) + parseInt(n2));
+    }
+
   function resta(n1, n2){
     //Retornar ERROR si uno o ambos números no estan definidos.
       if(n1== undefined || n2 == undefined){
