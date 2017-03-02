@@ -1,13 +1,13 @@
 //Valores obtenidas del formulario HTML
 var boton = document.getElementById('enviar');
-
+var resultados = document.getElementById('resultado');
 boton.onclick = function (){
   var nombre = document.getElementById('nombre').value;
   var numero1 = document.getElementById('num1').value;
   var numero2 = document.getElementById('num2').value;
   var operacion = document.getElementById('operacion').value;
-  //Llamando a la función "operaciones"
-  operaciones(operacion, numero1, numero2);
+  //Llamando a la función "operaciones" e imprimiendo en resultado
+  resultados.innerHTML = "Hola " + nombre+ " tu resultado es: " +operaciones(operacion, numero1, numero2);
     //return false;
   }
 
