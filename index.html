@@ -4,61 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Mi Primer Formulario-CALCULADORA</title>
+  <title>Calculadora Online Básica | Laboratoria</title>
   <link rel="stylesheet" href="assets/css/main.css">
   <style type="text/css">
-body {background-color:white; font-family: sans-serif;}
-label {color: maroon; display:block; padding:5px;}
-</style>
+      body {background-color:white; font-family: sans-serif;}
+      label {color: maroon; display:block; padding:5px;}
+  </style>
 </head>
 <body style="background-color: #E2A9F3;">
   <font color="#3D136D" face="Century Gothic, sans-serif">
-  <h1><i>CALCULADORA BASICA</i></h1>
+      <h1><i>CALCULADORA BÁSICA</i></h1>
   </font>
+
   <font  color ="#3D136D" face="Century Gothic, sans-serif">
-  <header>
-    <nav style="text-align:right">
-      <a href="imagen.html">No hacer click aquí</a>
-    </nav>
-  </header>
-    </font>
+    <header>
+      <nav style="text-align:right">
+          <a href="imagen.html">No hacer click aquí</a>
+      </nav>
+    </header>
+  </font>
+
   <font  color ="#3D136D" face="Century Gothic, sans-serif">
-  <section>
-    <form onsubmit="return false;">
-      <div>
-      <p><label for="nombre">Ingresar su nombre</label></p>
-        <input id="nombre" type="texto"  required >
-      </div>
-      <div>
-        <p><label for="num1">Ingresar el N°01</label></p>
-        <input id="num1" type="tel"  required >
-      </div>
-      <div>
-        <p><label for="num2"> Ingresar el N° 02</label></p>
-        <input id="num2" type="tel" required>
-      </div>
-      <section>
-      <h2>Escoger la operacion</h2>
+    <section>
+      <form onsubmit="return false;">
+        <div>
+          <p><label for="nombre">Nombre: </label></p>
+          <input id="nombre" type="texto"  placeholder="Ingrese su nombre" required >
+        </div>
+
+        <div>
+          <p><label for="num1">Primer número: </label></p>
+          <input id="num1" type="tel"  placeholder="Ingrese el primer término" required >
+        </div>
+
+        <div>
+          <p><label for="num2">Segundo número: </label></p>
+          <input id="num2" type="tel" placeholder="Ingrese el segundo término" required>
+        </div>
+      </form>
+    </section>
+    <section>
+      <h2>Escoger la operación</h2>
     </section>
     <div><p>
         <label for="seleccione"></label>
         <select  id="operacion" class="" name="operacion"  required >
-        <option value="valor1" selected>seleccione </option>
-        <option value="suma">Suma</option>
-        <option value="resta">Resta</option>
-        <option value="multi">Multiplicacion</option>
-        <option value="divi">Division</option>
-        <option value="potencia">Potencia</option>
+              <option value="valor1" selected>seleccione </option>
+              <option value="suma">Suma</option>
+              <option value="resta">Resta</option>
+              <option value="multi">Multiplicacion</option>
+              <option value="divi">Division</option>
+              <option value="potencia">Potencia</option>
         </select>
     </p></div>
     <div>
-      <p><button  id="enviar">Calcular</button></p>
-      </div>
-      </font>
-    </form>
-    <div id="resultado" style="margin-top: 25px">
+        <p><button  id="enviar">Calcular</button></p>
     </div>
-  </section>
+  </font>
+  <div id="resultado" style="margin-top: 25px">
+  </div>
   <script src="assets\js\main.js"></script>
 </body>
 </html>
