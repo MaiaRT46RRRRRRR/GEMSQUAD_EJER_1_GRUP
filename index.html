@@ -18,11 +18,11 @@ label {color: maroon; display:block; padding:5px;}
   <font  color ="#3D136D" face="Century Gothic, sans-serif">
   <header>
     <nav style="text-align:right">
-      <a href="Logout">No hagas click aqui</a>
+      <a href="imagen.html">No hacer click aquí</a>
     </nav>
   </header>
   <section>
-    <form action="" method="POST">
+    <form onsubmit="return false;">
       <div>
       <p><label for="nombre">Ingresar su nombre</label></p>
         <input id="nombre" type="texto"  required >
@@ -50,11 +50,13 @@ label {color: maroon; display:block; padding:5px;}
         </select>
     </p></div>
     <div>
-      <p><button  id="enviar" type="submit">Calcular</button></p>
+      <p><button  id="enviar">Calcular</button></p>
       </div>
         </font>
     </form>
+    <div id="resultado" style="margin-top: 25px">
+    </div>
   </section>
-  <script src="C:\Users\LABORATORIA 0106\Documents\REPOSITORIO\Clase\Prueba_Final_Branch\assets\js\main.js"></script>
+  <script src="assets\js\main.js"></script>
 </body>
 </html>
