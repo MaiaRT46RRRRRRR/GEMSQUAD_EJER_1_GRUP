@@ -56,6 +56,6 @@ boton.onclick = function (){
     alert("hola soy division");
   }
   function potencia(n1, n2){
-    //desarrollar la funcion potencia
+    return Math.pow(parseInt(n1),parseInt(n2));//desarrollar la funcion potencia
     alert("hola soy potencia");
   }
