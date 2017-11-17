@@ -1,3 +1,5 @@
+//GEMSQUAD | Ejercicio colaborativo
+
 //Valores obtenidas del formulario HTML
 var boton = document.getElementById('enviar');
 var resultados = document.getElementById('resultado');
@@ -73,7 +75,7 @@ boton.onclick = function (){
 
   function multiplicacion(n1, n2){
     //desarrollar la funcion multiplicacion
-        return n1*n2;  
+        return n1*n2;
   }
   function division(n1, n2){
     //desarrollar la funcion division
