@@ -1,0 +1,10 @@
+body {
+  background-color:white;
+   font-family: sans-serif;
+}
+
+label {
+  color: maroon;
+  display:block;
+  padding:5px;
+}
