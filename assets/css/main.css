@@ -1,10 +1,22 @@
 body {
-  background-color:white;
-   font-family: sans-serif;
+  background-color: #f09300;
+  font-family: sans-serif;
+}
+
+font {
+  color: #3D136D;
 }
 
 label {
   color: maroon;
   display:block;
   padding:5px;
+}
+
+nav {
+  text-align:right;
+}
+
+#resultado {
+  margin-top: 25px;
 }
